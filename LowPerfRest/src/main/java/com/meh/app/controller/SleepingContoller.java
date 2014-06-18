@@ -14,7 +14,7 @@ public class SleepingContoller {
 	@RequestMapping(method=RequestMethod.GET)
 	public @ResponseBody Customer getCustomer() throws InterruptedException{
 		Customer customer = new Customer();
-		Thread.sleep(3000);
+		Thread.sleep(30000);
 		customer.setId("123");
 		customer.setName("Mehshad");
 		return customer;
